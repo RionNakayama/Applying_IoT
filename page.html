@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input</title>
+</head>
+
+<body>
+<p>
+    Current temperature: <%= crtemp %> 
+</p>
+<p>
+    Setting temperature: <%= intemp %>
+</p>
+
+
+<form action = "/get" method = "post">
+    temperature: <input type = "text" name = "temp" id = "tempid">
+    <input type="submit" onclick="getInput();">
+</form>
+
+
+<script language="JavaScript">
+    function getInput() {
+        document.getElementById('tempid').innerHTML = temp;
+    }
+</script>
+
+</body>
+
+</html>
